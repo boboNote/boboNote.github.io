@@ -60,7 +60,7 @@ use_math: true
 
 이상치란 자연스럽거나 기계적으로 발생하는 극단적인 값을 의미한다. 물론 이상치를 섣불리 무조건적으로 제거하는 것은 바람직하지 않지만 불필요한 데이터로 판단된다면 이상치에 포함하는 범위를 설정해주고 이 범위를 벗어나는 값들을 모두 제거해준다. 보통 범위를 설정하기 위해서는 IQR(사분위수)을 사용하는데 사분위수란, 제3사분위수에서 제1사분위수를 뺀 값을 위미한다. 
 
-![IQR](./img/0211_IQR.png)
+![IQR](../img/0211_IQR.png)
 
 underthreshold = Q1 - (wight * 25th percentile)
 overthreshold = Q3 + (wight * 75th Percentile)
