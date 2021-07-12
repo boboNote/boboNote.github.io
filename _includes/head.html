@@ -26,6 +26,11 @@
 
   {% endif %}
 
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
+
   {% if site.search_enabled != false %}
     <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
   {% endif %}
