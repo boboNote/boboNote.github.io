@@ -102,7 +102,7 @@ Z-Score Normalization을 표준 정규 분포로 변경하는것이다.
 $ \mathrm{Z}=\frac{x-\upsilon}{\sigma} $
 
 
-![표준 정규 분포](./img/normalization_1.png)
+![표준 정규 분포](../img/normalization_1.png)
 
 </div>
 

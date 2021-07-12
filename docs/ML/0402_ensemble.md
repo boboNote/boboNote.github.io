@@ -48,10 +48,10 @@ nav_order: 4002
 * 보팅과 배깅은 여러 개의 분류기가 투표를 통해 최종 예측 결과를 결정하는 방식입니다. 
 * 보팅과 배깅의 다른 점은 보팅의 경우 일반적으로 서로 다른 알고리즘을 가진 분류기를 결합하는 것이고, 배깅의 경우 각각의 분류기가 모두 같은 유형의 알고리즘 기반이지만, 데이터 샘플링을 서로 다르게 가져가면서 학습을 수행해 보팅을 수행하는 것입니다. 
 
-![decisiontree](./img/04_votting_bagging.png)
+![decisiontree](../img/04_votting_bagging.png)
 
 ## 보팅 유형 - Hard voting Vs Soft Voting 
 * 일반적으로 하드 보팅보다는 소프트 보팅이 예측 성능이 상대적으로 우수하여 주로 사용됨 
 * 사이킷런은 **Votingclassfier** 클래스를 통해 보팅을 지원 
 
-![decisiontree](./img/04_HardVsSoft.png)
+![decisiontree](../img/04_HardVsSoft.png)

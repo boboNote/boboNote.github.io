@@ -53,7 +53,7 @@ use_math: true
 
 많은 통계적인 기법들은 데이터의 분포가 정규분포임을 가정한 상태에서 만들어졌다. 따라서 만약 특정 데이터의 분포가 정규 분포가 아닌 편향된 분포(Longtail , 멱함수 분포 라고도 부른다.) 모양을 띈다면 이를 ``정규분포화 시켜주어야 하는 사전 작업이이 필수적``이다. 
 
-![log_transform](./img/0210_logtrasform.png)
+![log_transform](../img/0210_logtrasform.png)
 
 
 ## IQR 이상치(Outlier) 제거하기  
@@ -95,15 +95,15 @@ $S_{xy}=\sum(X_i-\bar{x})(y_i-\bar{y})$
   * r = -1 : 모든점이 정확히 기울기가 음수인 직선 위에 위치한다. 
   * ``상관계수의 값이 1 또는 -1에 가까울 수록 두 변수 사이의 연관성이 크고, 0에 가까울 수록 매우 약함을 의미한다.``
 
-![상관계수](./img/0212_correlation_coefficient.png)
-![heatMap](./img/0213_heatmap.png)
+![상관계수](../img/0212_correlation_coefficient.png)
+![heatMap](../img/0213_heatmap.png)
 
 
 ## Sampling [Over_Under]
 데이터가 불균형한 분포를 가지는 경우, 모델의 학습이 제대로 이루어지지 않을 확률이 높습니다. 이문제를 해결하기 위해 나온개념이 언더 샘플링과 오버 샘플링입니다. 불균형한(Inbalance)한 데이터인 경우 문제가 도드라집니다. 
 
 
-![sampling](./img/0214_sampling.png)
+![sampling](../img/0214_sampling.png)
 
 ### Smote  
 대표적인 방법으로 소개할 개념은  SMOTE(Synthetic Minority Over-sampling Technique) 입니다.

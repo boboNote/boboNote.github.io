@@ -27,7 +27,7 @@ use_math: true
 랜덤 포레스트는 여러개의 결정트리 분류기가 각자의 데이터를 샘플링 하여 학습한다고 하였습니다. 그 때 여러 개의 데이터 세트를 중첩되게 분리하는 것을 부트스트래핑(bootstrapping) 분할 방식이라고 합니다. 
 배깅(Bagging)의 뜻도 bootstrap aggregation에서 온 말입니다. 
 
-![decisiontree](./img/04_bootstrapping.png)
+![decisiontree](../img/04_bootstrapping.png)
 
 **부트스트래핑을 이용해 만들어진 서브세트 내 에서 중복된 데이터가 발생한다**
 

@@ -53,7 +53,7 @@ use_math: true
 
 ## Early stopping 
 
-![decisiontree](./img/04_early_stopping.png)
+![decisiontree](../img/04_early_stopping.png)
 
 XGBoost는 특정 반복 횟수 만큼 더이상 비용함수가 감소하지 않으면 지정된 반복횟수를 다 완료하지 않고 수행을 종료할 수 있음. 
 
@@ -71,7 +71,7 @@ XGBoost 대비 장점
 
 ## 트리 분할 방식 
 
-![decisiontree](./img/04_leaf_wise.png)
+![decisiontree](../img/04_leaf_wise.png)
 
 균형 트리분할 방식은 일정합 Depth를 고르게 노드에 분할 하는 방식이다(XGBoost,.. GBM 계열)
 리프 중심 트리 분할 방식은 한쪽 노드에 집중을 허용하는 방식이다.(LightGBM)

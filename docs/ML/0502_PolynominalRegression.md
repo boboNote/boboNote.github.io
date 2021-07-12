@@ -42,4 +42,4 @@ Degree를 이용하여 모델성능을 개선할수 있지만 Degree가 과도�
   * 편향이 낮다
   * 분산이 높다 
 
-![decisiontree](./img/05_magic.png)
+![decisiontree](../img/05_magic.png)
