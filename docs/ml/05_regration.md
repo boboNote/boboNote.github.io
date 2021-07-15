@@ -113,8 +113,14 @@ $\frac{\partial R(w)}{\partial{w_0}} = \frac{2}{N}\sum_{i=1}^N-(y_i - (w_0 + w_1
 * RMSE를 제공하지 않아 MSE에 제곱근을 씌워서 계산하는 함수를 직접 만들어야 한다. 
 * ``'neg'`` 'neg_mean_absolute_error' 일반적인 Scorring 함수는 결과가 커져야 좋게 인지 하는 경향이 있다. 따라서 회귀 평가시에는 비용함수를 작게 하는게 좋아 'neg' prefix 가 붙게 된다. 
 
+## 사이킷런의 회귀 트리지원 
 
-
+| 알고리즘 | 회귀Estimator |분류 Estimator 클래스|
+|:-|:-|:-|
+|Decision Tree|DecisionTreeRegressor|DecisionTreeClassifier|
+|Gradient Boosting|GradientBoostingRegressor|GradientBoostingClassifier|
+|XGBoost|XGBRegressor|XGBClassfier|
+|LightGBM|LGBMRegressor|LGBMClassifier|
 
 
 
