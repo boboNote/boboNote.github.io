@@ -66,4 +66,43 @@ for i , feature in enumerate(lm_features):                                # Ops 
 </div>
 
 
+## 상관 관계 분석 
+
+컬럼간 히트맵을 보게되면 대칭행렬을 띤다. 대각 사선을 기준으로 아래 또는 위로 보는게 산만하지 않고 휠씬 쉽다. 
+ boolean Selection 을 통해 속성 위치를 선책할수 있다. 
+
+
+```python
+houses = pd.read_csv('data/melb_data.csv')
+
+# Calculate pairwise-correlation
+matrix = houses.corr()
+
+# Create a mask
+mask = np.triu(np.ones_like(matrix, dtype=bool))
+
+# Create a custom diverging palette
+cmap = sns.diverging_palette(250, 15, s=75, l=40,
+                             n=9, center="light", as_cmap=True)
+
+plt.figure(figsize=(16, 12))
+
+sns.heatmap(matrix, mask=mask, center=0, annot=True,
+             fmt='.2f', square=True, cmap=cmap)
+
+plt.show();
+```
+
+## 미싱 데이터 탐색 
+작은 트릭을 이용하여  미씽데이터를 찾아보자.  
+
+```python 
+houses.CouncilArea.value_counts(dropna=False, normalize=True).head()
+NaN           0.100810
+Moreland      0.085641
+Boroondara    0.085420
+Moonee Valley 0.073417
+Darebin       0.068778
+Name: CouncilArea, dtype: float64
+```
 
