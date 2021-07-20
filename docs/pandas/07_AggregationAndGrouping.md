@@ -101,7 +101,7 @@ df.mean()
     B    0.443420
     dtype: float64
 
-df.mean(axis='columns')
+df.mean(axis='columns') # or df.mean(axis=1) 
     0    0.088290
     1    0.513997
     2    0.849309
@@ -166,8 +166,8 @@ The following table summarizes some other built-in Pandas aggregations:
 
 ### Split, apply, combine
 "적용"이 합산 집계인 이 분할-적용-결합 작업의 표준 예가 다음 그림에 나와 있습니다. 
-![](figures/03.08-split-apply-combine.png)
-[figure source in Appendix](06.00-Figure-Code.ipynb#Split-Apply-Combine)
+![split_transform_combined](https://miro.medium.com/max/770/1*JbF6nhrQsn4f-TaSF6IR9g.png)
+<!-- [figure source in Appendix](06.00-Figure-Code.ipynb#Split-Apply-Combine) -->
 
 * 분할 단계에는 지정된 키 값에 따라 DataFrame을 분할하고 그룹화하는 작업이 포함됩니다.  
 * 적용 단계에는 개별 그룹 내에서 일반적으로 집계, 변환 또는 필터링과 같은 일부 기능을 계산하는 작업이 포함됩니다.
@@ -443,6 +443,8 @@ GroupBy 내의 apply()는 매우 유연합니다. 유일한 기준은 함수가 
 
 ```python 
 L = [0, 1, 0, 1, 2, 0]
+# List 객체가 groupby 로 들어가도 OK!
+# 아래서 나오겠지만 Series 객체가 들어가도 OK!
 display('df', 'df.groupby(L).sum()')
 | df |     |       |       || df.groupby(L).sum() |       |       |
 |----|-----|-------|-------||---------------------|-------|-------|
@@ -477,6 +479,7 @@ display('df', "df.groupby(df['key']).sum()")
 또 다른 방법은 인덱스 값을 그룹 키에 매핑하는 사전을 제공하는 것입니다.
 
 ```python 
+# key 값을 Index로 하여 Group by를 진행한다. 
 df2 = df.set_index('key')
 df2 
     |     | data1 | data2 |
