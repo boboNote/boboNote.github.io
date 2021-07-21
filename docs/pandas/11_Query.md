@@ -174,8 +174,6 @@ np.allclose(result1, result3)
 ```
 
 ### Assignment in DataFrame.eval() 
-192 / 5000
-번역 결과
 방금 설명한 옵션 외에도 ``DataFrame.eval()``을 사용하면 모든 열에 할당할 수 있습니다.
 ``'A'``, ``'B'`` 및 ``'C'`` 열이 있는 이전의 ``DataFrame``을 사용하겠습니다. 
 
