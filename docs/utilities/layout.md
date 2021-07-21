@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Layout
 parent: Utilities
@@ -124,4 +124,4 @@ These headings will be `inline-block`:
 
 ### heading 3
 {: .d-inline-block }
-```
+``` -->

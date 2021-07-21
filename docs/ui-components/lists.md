@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Lists
 parent: UI Components
@@ -96,4 +96,4 @@ Definition lists require HTML syntax and aren't supported with the GitHub Flavor
   <dt>Color</dt>
   <dd>Green</dd>
 </dl>
-```
+``` -->

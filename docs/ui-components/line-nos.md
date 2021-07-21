@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Code with line numbers
 parent: Code
@@ -112,4 +112,4 @@ and the non-conforming HTML produced by Jekyll for line numbers:
 GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
-{% endhighlight %}
+{% endhighlight %} -->

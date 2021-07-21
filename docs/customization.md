@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Customization
 nav_order: 6
@@ -112,4 +112,4 @@ For example, if you'd like to add your own styles for printing a page, you could
   .side-bar, .page-header { display: none; }
   .main-content { max-width: auto; margin: 1em;}
 }
-```
+``` -->

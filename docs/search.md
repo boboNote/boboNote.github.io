@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Search
 nav_order: 7
@@ -124,4 +124,4 @@ $ bundle exec just-the-docs rake search:init
 ```
 
 This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses to create your search index.
-Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/master/assets/js/zzzz-search-data.json).
+Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/master/assets/js/zzzz-search-data.json). -->

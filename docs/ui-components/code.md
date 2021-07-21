@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Code
 parent: UI Components
@@ -85,4 +85,4 @@ To demonstrate front end code, sometimes it's useful to show a rendered example 
 ```markdown
 [Link button](http://example.com/){: .btn }
 ```
-{% endhighlight %}
+{% endhighlight %} -->

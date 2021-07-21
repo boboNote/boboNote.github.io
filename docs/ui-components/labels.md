@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: Labels
 parent: UI Components
@@ -46,4 +46,4 @@ Coming soon
 
 Deprecated
 {: .label .label-red }
-```
+``` -->
