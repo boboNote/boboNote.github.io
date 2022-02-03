@@ -5,7 +5,6 @@
 
 
 
-kdkekfkjeifaskjdfi 
 
 dd : 잘 알고 있다. 
 
