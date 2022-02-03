@@ -19,78 +19,68 @@ use_math: true
 
 ---
 ## ExponentialFuntion (지수함수)
+교환 결합 분배 법칙 관련 수식만 정의 해보자. 
 
-### 거듭제곱
-어떤 수 $a$를 $n$번 곱한 것을 $a^n$ 으로 나타내고, $a, a^2, a^3, ..., a^n,... $ 을 통틀어 a의 거듭제곰이라고 한다. 
-이때 $a^n$에서 a를 거듭제곱의 밑, n을 거듭제곱의 지수라고 한다. 
-
-<div class="code-example" markdown="1">
-<b>지수가 자연수일 때의 지수 법칙  $a , b$가 실수이고 $m,n$이 자연수 일 때, </b>
-
- - $a^{m}a^{n} = a^{m+n}$
- - $(a^m)^n = a^{mn}$   
- - $(ab)^{n} = a^{n}b^{m}$
- - $(\frac{a}{b})^n = \frac{a^n}{b^n}  (b  \neq 0 ) $
- - $a^m\div a^n = \begin{cases} a^{m-n} &(m>n)\\\ 1 &(m=n)\\\ \frac{1}{a^{n-m}} &(m<n) \end{cases}$
-</div>
-
-### 거듭제곱근 
-제곱하여 실수 $a$ 가 되는 수를 $a$의 제곱근이라 하고, 세제곱하여 실수 a가 되는 수를 a의 세제곱근이라고 한다. 
- 일반적으로 n이 2이상인 자연수일 때, n제곱하여 실수 a가 되는 수, 즉 방정식 $x^{n}=a$의 근 $x$를 $a$의 $n$제곱근이라고 한다. 
-$a$의 제곱근, 세제곱근, 네제곱근, ...을 통틀어 $a$의 거듭제곱근이라고 한다. 
+### 지수
 
 <div class="code-example" markdown="1">
-<b>거듭제곱근 성질 a>0, b>0이고 m,n이 2이상인 자연수 일 때</b>
+<b>지수 기본 법칙</b>
 
- - $\sqrt[n]{a} \sqrt[n]{b} = \sqrt[n]{ab}$
- - $\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{a \over b}$
- - $(\sqrt[n]{a})^m = \sqrt[n]{a^m}$
- - $\sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}$
-</div>
-
-<div class="code-example" markdown="1">
-<b>0 또는 음의 정수인 지수 </b>
-
- - $a \ne 0$이고 $n$이 양의 정수일 때, $a^0 = 1, a^{-n} = a\over a^{n}$ 
+ - $a^0=1$
+ - $a^{-1} = \frac{1}{a^n}$
+ - $\sqrt[n]{a} = a^{\frac{1}{n}}$
 </div>
 
 
 <div class="code-example" markdown="1">
-<b>지수가 정수일 때의 지수 법칙  $a\ne0, b\ne0$ 이고 $m,n$이 정수일 때,  </b>
+<b>지수 연산 법칙</b>
 
- - $a^{m}a^{n} = a^{m+n}$
- - $a^m \div a^n = a^{m-n}$
- - $(a^m)^n = a^{nm}$
- - $(ab)^n = a^nb^n$ 
+ - $a^n \times a^m = a^{n+m}$
+ - $(a^{m})^n = a^{mn}$
+ - $(ab)^n = a^n \times a^m$
+ - $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$
 </div>
 
 <div class="code-example" markdown="1">
-<b>유리수인 지수 $a>0$ 이고 $m,n (n>=2)$ 이 정수일 때,  </b>
+<b>법칙의 응용</b>
 
- - $a^{\frac{m}{n}} = \sqrt[n]{m}$ , $a^{\frac{1}{n}} = =sqrt[n]{a}$
+ - $a^n \div a^m = a^{n-m}$
+ - $\sqrt[m]{a^n} = (a^n)^{\frac{1}{m}} = a^{\frac{n}{m}}$
 </div>
 
-## Log Function 
+## LogFuntion 
 
-### Log 
-$a>0, a\ne1 일때, 양수 N에 대하여 a^x=N을 만족시키는 실수 x는 오직 하나 존재한다. 이 수 x를 \log_{x} N 으로 나태내고, a를 밑으로 하는 N의 로그라고 한다. 
-이때 N을 \log_{a} N의 진수라고 한다. $
+### 로그 함수 
+ $y=\log x$
+
+### 지수와 로그의 관계 (자연상수)
+$y = e^x , \log y = x $
 
 <div class="code-example" markdown="1">
-<b>Log  </b>
+<b>로그 기본 법칙</b>
 
- $a>0 , a\ne1, N>0일 때,$ 
- $a^x=N \Leftrightarrow x=\log_{a} N $
+ - $\log 1 = 0 $
+ - $\log 0 = -\propto$
+</div>
+
+<div class="code-example" markdown="1">
+<b>로그 연산 법칙</b>
+
+ - $\log a + \log b = \log ab $
+ - $\log a - \log b = \log \frac{a}{b}$
+ - $\log a^b = b\log {a}$
 </div>
 
 
+### 음수지수 
+음수지수 관련 이미지를 통해 역수가 어떻게 나오는지 도식화 해본다. 
 
-
-
-
-
-
-
+| -       | -       | -     | -     | -     | -   | -     | - | -     | - | -     | -   | -     | -     |
+|---------|---------|-------|-------|-------|-----|-------|---|-------|---|-------|-----|-------|-------|
+| 역방향 곱   |         | ←*1/a |       | ←*1/a |     | ←*1/a |   | ←*1/a |   | ←*1/a |     | ←*1/a |       |
+| 지수      | -3      |       | -2    |       | -1  |       | 0 |       | 1 |       | 2   |       | 3     |
+| 정방향 곱   |         | → *a   |       | → *a   |     | → *a   |   | → *a   |   | → *a   |     | → *a   |       |
+| Result  | 1/a·a·a |       | 1/a·a |       | 1/a |       | 1 |       | a |       | a*a |       | a*a*a |
 
 
 
